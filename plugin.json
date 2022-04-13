@@ -1,0 +1,62 @@
+{
+  "type": "app",
+  "name": "NCache",
+  "id": "alachisoft-ncache-app",
+
+  "info": {
+    "author": {
+      "name": "NCache App for Grafana",
+      "url": "https://www.alachisoft.com"
+    },
+    "logos": {
+      "small": "img/logo.png",
+      "large": "img/logo.png"
+    },
+    "version": "1.0.0",
+    "updated": "2021-01-27"
+  },
+
+  "includes": [
+    {
+      "type": "page",
+      "name": "Cache",
+      "path": "/d/cache/cache",
+      "role": "Viewer",
+      "addToNav": true,
+      "defaultNav": true
+    },
+    {
+      "type": "page",
+      "name": "Client",
+      "path": "/d/client/client",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "page",
+      "name": "Bridge",
+      "path": "/d/bridge/bridge",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "NCache Cache",
+      "path": "dashboards/Cache.json"
+    },
+    {
+      "type": "dashboard",
+      "name": "NCache Client",
+      "path": "dashboards/Client.json"
+    },
+    {
+      "type": "dashboard",
+      "name": "NCache Bridge",
+      "path": "dashboards/Bridge.json"
+    }
+  ],
+  "dependencies": {
+    "grafanaVersion": "6.6.x",
+    "plugins": []
+  }
+}
