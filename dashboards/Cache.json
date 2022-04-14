@@ -705,14 +705,14 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "ncache_cache_size{is_mirror=\"False\",cache_id=~\"$cache|\",server=~\"$Node|\"}",
+          "expr": "ncache_cache_size{is_mirror=\"False\",cache_id=~\"$cache|\",server=~\"$Node|\"}/1048576",
           "instant": false,
           "interval": "",
           "legendFormat": "{{cache_id}}[{{server}}] Active",
           "refId": "A"
         },
         {
-          "expr": "ncache_cache_size{is_mirror=\"True\",cache_id=~\"$cache|\",server=~\"$Node|\"}",
+          "expr": "ncache_cache_size{is_mirror=\"True\",cache_id=~\"$cache|\",server=~\"$Node|\"}/1048576",
           "interval": "",
           "legendFormat": "{{cache_id}}[{{server}}] Replica",
           "refId": "B"
@@ -722,7 +722,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Cache Size",
+      "title": "Cache Size (MB)",
       "tooltip": {
         "shared": true,
         "sort": 0,
